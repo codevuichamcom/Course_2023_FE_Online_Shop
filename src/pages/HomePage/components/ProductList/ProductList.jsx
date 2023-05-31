@@ -61,15 +61,18 @@ const products = [
   },
 ];
 const ProductList = ({ description, title, name }) => {
+  const isShowIntro = description || title || name;
   return (
     <div className="product-list">
       <Container>
-        <div className="product-list__intro">
-          <p>{description}</p>
-          <h2>
-            {title} <span className="product-list__intro__style">{name}</span>
-          </h2>
-        </div>
+        {isShowIntro && (
+          <div className="product-list__intro">
+            <p>{description}</p>
+            <h2>
+              {title} <span className="product-list__intro__style">{name}</span>
+            </h2>
+          </div>
+        )}
         <Row>
           {products.map((product) => (
             <Col md="6" lg="4" xl="3">
