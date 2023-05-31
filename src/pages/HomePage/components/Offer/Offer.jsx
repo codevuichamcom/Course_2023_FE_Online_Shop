@@ -1,17 +1,14 @@
 import React from "react";
 import "./Offer.css";
 import { Button, Col, Row } from "reactstrap";
-import backgroud from "../../../../img/home/parallax-bg.png";
 
 const Offer = () => {
   return (
     <div
       className="offer"
       style={{
-        backgroundImage: `url(${backgroud})`,
-        backgroundPosition: "right center",
+        backgroundImage: `url(/img/home/parallax-bg.png)`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "100% 100%",
       }}
     >
       <Row noGutters>

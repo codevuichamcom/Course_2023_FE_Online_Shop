@@ -20,7 +20,7 @@ const Header = () => {
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div className="Header">
+    <div className="header">
       <Container>
         <Navbar expand="xl" light>
           <NavbarBrand href="/">
@@ -49,13 +49,13 @@ const Header = () => {
               </NavItem>
             </Nav>
             <Nav className="d-flex align-items-center Header__actions">
-              <NavItem className="Header__actions__search">
+              <NavItem className="header__actions__search">
                 <FontAwesomeIcon icon={faSearch} />
               </NavItem>
-              <NavItem className="Header__actions__cart">
+              <NavItem className="header__actions__cart">
                 <FontAwesomeIcon icon={faShoppingCart} />
               </NavItem>
-              <NavItem className="Header__actions__buy">
+              <NavItem className="header__actions__buy">
                 <Button color="primary" outline>
                   Buy Now
                 </Button>

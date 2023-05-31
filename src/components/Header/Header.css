@@ -1,4 +1,4 @@
-.Header {
+.header {
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -7,19 +7,19 @@
   z-index: 2;
 }
 
-.Header .nav {
+.header .nav {
   height: 89px;
 }
 
-.Header .navbar .nav-item {
+.header .navbar .nav-item {
   margin-right: 25px;
 }
 
-.Header__actions li {
+.header__actions li {
   margin-right: 15px;
 }
 
-.Header__actions__buy button {
+.header__actions__buy button {
   margin-left: 40px;
   padding: 10px 45px;
   color: #222;
@@ -27,7 +27,7 @@
   border-radius: 30px;
 }
 
-.Header__actions__buy button:hover {
+.header__actions__buy button:hover {
   border-color: #384aeb;
   background: transparent;
   color: #222;

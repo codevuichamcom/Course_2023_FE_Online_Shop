@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <main className="HomePage__main">
+      <main className="home-page__main">
         <Banner />
         <Slide />
         <ProductList
