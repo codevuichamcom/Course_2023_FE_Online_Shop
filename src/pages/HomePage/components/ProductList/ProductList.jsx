@@ -62,12 +62,12 @@ const products = [
 ];
 const ProductList = ({ description, title, name }) => {
   return (
-    <div className="ProductList">
+    <div className="product-list">
       <Container>
-        <div className="ProductList__intro">
+        <div className="product-list__intro">
           <p>{description}</p>
           <h2>
-            {title} <span className="ProductList__intro__style">{name}</span>
+            {title} <span className="product-list__intro__style">{name}</span>
           </h2>
         </div>
         <Row>
