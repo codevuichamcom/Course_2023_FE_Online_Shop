@@ -47,3 +47,20 @@
   outline: none;
   width: 50%;
 }
+
+.filter-bar {
+  height: 58px;
+  padding: 0 20px;
+  background: #f1f6f7;
+  margin-bottom: 30px;
+}
+.filter-bar select {
+  min-width: 100px;
+}
+.filter-bar__sort select {
+  height: 38px;
+  margin-right: 10px;
+}
+.filter-bar__search {
+  max-width: 200px;
+}

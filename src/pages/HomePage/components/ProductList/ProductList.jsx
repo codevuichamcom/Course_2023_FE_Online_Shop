@@ -1,6 +1,5 @@
-import { Col, Container, Row } from "reactstrap";
+import { Col, Row } from "reactstrap";
 import ProductCard from "../../../HomePage/components/ProductCard/ProductCard";
-import "./ProductList.css";
 
 const products = [
   {
@@ -59,29 +58,44 @@ const products = [
     imageUrl: "/img/product/product8.png",
     price: 150.0,
   },
+  {
+    id: 9,
+    brand: "Decor",
+    name: "Room Flash Light",
+    imageUrl: "/img/product/product5.png",
+    price: 150.0,
+  },
+  {
+    id: 10,
+    brand: "Accessories",
+    name: "Man Office Bag",
+    imageUrl: "/img/product/product6.png",
+    price: 150.0,
+  },
+  {
+    id: 11,
+    brand: "Accessories",
+    name: "Quartz Belt Watch",
+    imageUrl: "/img/product/product7.png",
+    price: 150.0,
+  },
+  {
+    id: 12,
+    brand: "Kids Toy",
+    name: "Charging Car",
+    imageUrl: "/img/product/product8.png",
+    price: 150.0,
+  },
 ];
-const ProductList = ({ description, title, name }) => {
-  const isShowIntro = description || title || name;
+const ProductList = ({ ...args }) => {
   return (
-    <div className="product-list">
-      <Container>
-        {isShowIntro && (
-          <div className="product-list__intro">
-            <p>{description}</p>
-            <h2>
-              {title} <span className="product-list__intro__style">{name}</span>
-            </h2>
-          </div>
-        )}
-        <Row>
-          {products.map((product) => (
-            <Col md="6" lg="4" xl="3">
-              <ProductCard product={product} />
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </div>
+    <Row md="2" lg="3" xl="4" {...args}>
+      {products.map((product) => (
+        <Col key={product.id}>
+          <ProductCard product={product} />
+        </Col>
+      ))}
+    </Row>
   );
 };
 export default ProductList;

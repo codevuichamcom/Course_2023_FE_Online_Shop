@@ -1,10 +1,10 @@
-import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import Banner from "./components/Banner/Banner";
-import Slide from "./components/Slide/Slide";
-import ProductList from "./components/ProductList/ProductList";
-import Offer from "./components/Offer/Offer";
+import Header from "../../components/Header/Header";
 import "./HomePage.css";
+import Banner from "./components/Banner/Banner";
+import Offer from "./components/Offer/Offer";
+import ProductListWithIntro from "./components/ProductListWithIntro/ProductListWithIntro";
+import Slide from "./components/Slide/Slide";
 const HomePage = () => {
   return (
     <>
@@ -12,18 +12,18 @@ const HomePage = () => {
       <main className="home-page__main">
         <Banner />
         <Slide />
-        <ProductList
+        <ProductListWithIntro
           description="Popular Item in the market"
           title="Trending"
           name="Product"
         />
         <Offer />
-        <ProductList
+        <ProductListWithIntro
           description="Popular Item in the market"
           title="Best"
           name="Sellers"
         />
-        <ProductList
+        <ProductListWithIntro
           description="Popular Item in the market"
           title="Latest"
           name="News"
