@@ -4,11 +4,12 @@ import Banner from "./components/Banner/Banner";
 import Slide from "./components/Slide/Slide";
 import ProductList from "./components/ProductList/ProductList";
 import Offer from "./components/Offer/Offer";
+import "./HomePage.css";
 const HomePage = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="HomePage__main">
         <Banner />
         <Slide />
         <ProductList

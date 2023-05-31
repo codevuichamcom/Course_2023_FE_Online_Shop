@@ -13,7 +13,6 @@ import {
 
 import { faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logo from "../../img/logo.png";
 import "./Header.css";
 
 const Header = () => {
@@ -21,11 +20,11 @@ const Header = () => {
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <>
-      <Container className="Header">
-        <Navbar expand="lg" light>
+    <div className="Header">
+      <Container>
+        <Navbar expand="xl" light>
           <NavbarBrand href="/">
-            <img src={logo} />
+            <img src="/img/logo.png" />
           </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
@@ -65,7 +64,7 @@ const Header = () => {
           </Collapse>
         </Navbar>
       </Container>
-    </>
+    </div>
   );
 };
 

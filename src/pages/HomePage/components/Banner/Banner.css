@@ -6,7 +6,7 @@
 .Banner::before {
   content: "";
   display: block;
-  width: 30%;
+  width: 5%;
   height: 100%;
   background: #384aeb;
   position: absolute;
@@ -14,10 +14,27 @@
   left: 0;
 }
 
+@media (min-width: 575px) {
+  .Banner::before {
+    width: 20%;
+  }
+}
+@media (min-width: 991px) {
+  .Banner::before {
+    width: 30%;
+  }
+}
+
 .Banner_row {
   position: relative;
   padding-top: 60px;
   z-index: 1;
+}
+
+@media (max-width: 575px) {
+  .Banner_row {
+    padding-bottom: 50px;
+  }
 }
 
 .Banner__img {
