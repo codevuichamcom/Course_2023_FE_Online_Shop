@@ -2,7 +2,7 @@ import { Card, CardBody } from "reactstrap";
 
 import "./ProductCard.css";
 
-const ProductCard = ({ product }) => {
+export const ProductCard = ({ product }) => {
   return (
     <Card className="product-card text-center">
       <img alt="Sample" src={product.imageUrl} />
@@ -16,4 +16,3 @@ const ProductCard = ({ product }) => {
     </Card>
   );
 };
-export default ProductCard;

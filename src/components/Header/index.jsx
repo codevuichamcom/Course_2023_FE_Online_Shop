@@ -15,7 +15,7 @@ import { faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.css";
 
-const Header = () => {
+export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -67,5 +67,3 @@ const Header = () => {
     </div>
   );
 };
-
-export default Header;

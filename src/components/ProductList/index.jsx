@@ -1,5 +1,5 @@
 import { Col, Row } from "reactstrap";
-import ProductCard from "../../../HomePage/components/ProductCard/ProductCard";
+import { ProductCard } from "../ProductCard";
 
 const products = [
   {
@@ -87,7 +87,7 @@ const products = [
     price: 150.0,
   },
 ];
-const ProductList = ({ ...args }) => {
+export const ProductList = ({ ...args }) => {
   return (
     <Row md="2" lg="3" xl="4" {...args}>
       {products.map((product) => (
@@ -98,4 +98,3 @@ const ProductList = ({ ...args }) => {
     </Row>
   );
 };
-export default ProductList;

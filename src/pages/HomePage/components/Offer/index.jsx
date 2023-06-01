@@ -2,7 +2,7 @@ import React from "react";
 import "./Offer.css";
 import { Button, Col, Row } from "reactstrap";
 
-const Offer = () => {
+export const Offer = () => {
   return (
     <div
       className="offer"
@@ -24,5 +24,3 @@ const Offer = () => {
     </div>
   );
 };
-
-export default Offer;
