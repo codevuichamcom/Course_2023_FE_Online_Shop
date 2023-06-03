@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import "./Slide.css";
-function Slide() {
+export const Slide = () => {
   return (
     <Container fluid className="slide">
       <Row className="flex-nowrap">
@@ -26,6 +26,4 @@ function Slide() {
       </Row>
     </Container>
   );
-}
-
-export default Slide;
+};

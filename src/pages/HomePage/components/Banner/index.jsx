@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "reactstrap";
 import "./Banner.css";
 
-const Banner = () => {
+export const Banner = () => {
   return (
     <div className="banner">
       <Container>
@@ -34,4 +34,3 @@ const Banner = () => {
     </div>
   );
 };
-export default Banner;

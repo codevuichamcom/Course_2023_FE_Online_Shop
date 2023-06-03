@@ -1,11 +1,7 @@
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
+import { Footer, Header } from "src/components";
 import "./HomePage.css";
-import Banner from "./components/Banner/Banner";
-import Offer from "./components/Offer/Offer";
-import ProductListWithIntro from "./components/ProductListWithIntro/ProductListWithIntro";
-import Slide from "./components/Slide/Slide";
-const HomePage = () => {
+import { Banner, Offer, ProductListWithIntro, Slide } from "./components";
+export const HomePage = () => {
   return (
     <>
       <Header />
@@ -33,4 +29,3 @@ const HomePage = () => {
     </>
   );
 };
-export default HomePage;

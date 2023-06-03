@@ -1,8 +1,8 @@
 import { Container } from "reactstrap";
-import ProductList from "../ProductList/ProductList";
+import { ProductList } from "src/components";
 import "./ProductListWithIntro.css";
 
-const ProductListWithIntro = ({ description, title, name, ...args }) => {
+export const ProductListWithIntro = ({ description, title, name, ...args }) => {
   return (
     <div className="product-list">
       <Container>
@@ -17,4 +17,3 @@ const ProductListWithIntro = ({ description, title, name, ...args }) => {
     </div>
   );
 };
-export default ProductListWithIntro;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Input } from "reactstrap";
 
-const SelectBoxCustom = ({ data, onSelectBoxChange, ...args }) => {
+export const SelectBoxCustom = ({ data, onSelectBoxChange, ...args }) => {
   return (
     <Input
       {...args}
@@ -19,5 +19,3 @@ const SelectBoxCustom = ({ data, onSelectBoxChange, ...args }) => {
     </Input>
   );
 };
-
-export default SelectBoxCustom;
