@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "src/global.css";
 import { HomePage } from "src/pages/HomePage";
 import { ShopCategoryPage } from "src/pages/ShopCategoryPage";
 import { ProductDetailPage } from "src/pages/ProductDetailPage";
