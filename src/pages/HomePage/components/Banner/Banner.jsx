@@ -5,7 +5,7 @@ export const Banner = () => {
   return (
     <div className="banner">
       <Container>
-        <Row noGutters className="banner_row align-items-center pt-60px">
+        <Row className="banner_row align-items-center pt-60px gx-0">
           <Col xs="5" className="d-none d-sm-block">
             <div className="Banner__img img-fluid">
               <img

@@ -55,7 +55,7 @@ export const ProductDetailPage = () => {
           <Col className="product-detail-page__product-area__infor" lg="6">
             <h3>Faded SkyBlu Denim Jeans</h3>
             <h2>$149.99</h2>
-            <ul class="product-detail-page__product-area__infor__list">
+            <ul className="product-detail-page__product-area__infor__list">
               <li>
                 <span>Category</span> : Household
               </li>
@@ -69,8 +69,8 @@ export const ProductDetailPage = () => {
               interior look awesome, and at the same time give you the pleasant
               warm feeling during the winter.
             </p>
-            <div class="product-detail-page__product-area__infor__quantity">
-              <label for="quantity">Quantity:</label>
+            <div className="product-detail-page__product-area__infor__quantity">
+              <label htmlFor="quantity">Quantity:</label>
               <Input id="quantity" type="text" size="2" value="1" />
               <Button color="primary">Add to Cart</Button>
             </div>

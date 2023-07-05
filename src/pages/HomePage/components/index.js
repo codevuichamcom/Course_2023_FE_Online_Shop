@@ -1,4 +1,4 @@
-export { Banner } from "./Banner";
-export { Offer } from "./Offer";
-export { ProductListWithIntro } from "./ProductListWithIntro";
-export { Slide } from "./Slide";
+export { Banner } from "./Banner/Banner";
+export { Offer } from "./Offer/Offer";
+export { ProductListWithIntro } from "./ProductListWithIntro/ProductListWithIntro";
+export { Slide } from "./Slide/Slide";

@@ -1,8 +1,8 @@
-export { BannerPath } from "./BannerPath";
-export { Footer } from "./Footer";
-export { Header } from "./Header";
-export { ProductCard } from "./ProductCard";
-export { ProductList } from "./ProductList";
-export { SelectBoxCustom } from "./SelectBoxCustom";
-export { Comment } from "./Comment";
-export { StarList } from "./StarList";
+export { BannerPath } from "./BannerPath/BannerPath";
+export { Footer } from "./Footer/Footer";
+export { Header } from "./Header/Header";
+export { ProductCard } from "./ProductCard/ProductCard";
+export { ProductList } from "./ProductList/ProductList";
+export { SelectBoxCustom } from "./SelectBoxCustom/SelectBoxCustom";
+export { Comment } from "./Comment/Comment";
+export { StarList } from "./StarList/StarList";

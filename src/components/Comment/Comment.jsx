@@ -1,5 +1,5 @@
 import { Button, Col, Row } from "reactstrap";
-import { StarList } from "../StarList";
+import { StarList } from "../StarList/StarList";
 import "./Comment.css";
 
 export const Comment = () => {
