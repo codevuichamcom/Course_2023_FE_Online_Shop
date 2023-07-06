@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Button,
   Collapse,
   Container,
   Nav,
   NavItem,
-  NavLink,
   Navbar,
   NavbarBrand,
   NavbarToggler,
@@ -13,9 +12,14 @@ import {
 
 import { faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useSelector } from "react-redux";
+import { Avatar } from "../Avatar/Avatar";
 import "./Header.css";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export const Header = () => {
+  const navigate = useNavigate();
+  const accountLoggedIn = useSelector((state) => state.account.loggedIn);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -30,19 +34,16 @@ export const Header = () => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto me-auto" navbar>
               <NavItem>
-                <NavLink href="/home">Home</NavLink>
+                <NavLink to="/home">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/shop-category">Shop</NavLink>
+                <NavLink to="/shop-category">Shop</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/login">Login</NavLink>
+                <NavLink to="/blog">Blog</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/register">Register</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/contact">Contact</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
               </NavItem>
             </Nav>
             <Nav className="d-flex align-items-center Header__actions">
@@ -57,6 +58,22 @@ export const Header = () => {
                   Buy Now
                 </Button>
               </NavItem>
+              {accountLoggedIn.username ? (
+                <Avatar
+                  imageURL="img/user.png"
+                  name={accountLoggedIn.username}
+                />
+              ) : (
+                <Button
+                  color="primary"
+                  outline
+                  onClick={() => {
+                    navigate("/login");
+                  }}
+                >
+                  Login
+                </Button>
+              )}
             </Nav>
           </Collapse>
         </Navbar>

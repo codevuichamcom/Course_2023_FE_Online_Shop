@@ -25,7 +25,7 @@ export const RegisterPage = () => {
   const handleDataChange = (key, value) => {
     setFormData({ ...formData, [key]: value });
   };
-  const handleRegisterSubmit = async () => {
+  const handleRegisterSubmited = async () => {
     if (formData.confirmPassword !== formData.password) {
       toast.error("Confirm password does not match");
       return;
@@ -98,7 +98,7 @@ export const RegisterPage = () => {
                   }}
                 />
               </FormGroup>
-              <Button onClick={handleRegisterSubmit} outline color="primary">
+              <Button onClick={handleRegisterSubmited} outline color="primary">
                 Register
               </Button>
             </Form>

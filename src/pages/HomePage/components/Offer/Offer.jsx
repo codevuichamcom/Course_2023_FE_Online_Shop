@@ -11,7 +11,7 @@ export const Offer = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <Row noGutters>
+      <Row className="gx-0">
         <Col xl="5">
           <div className="offer__content text-center">
             <h3>Up To 50% Off</h3>

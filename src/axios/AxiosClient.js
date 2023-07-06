@@ -10,7 +10,8 @@ const noAuth = ["/login", "/accounts"];
 const onRequest = (config) => {
   const { url } = config;
   if (!noAuth.includes(url)) {
-    config.headers = { Authorization: "Bearer Token" };
+    const accessToken = localStorage.getItem("accessToken");
+    config.headers = { Authorization: `Bearer ${accessToken}` };
   }
   return config;
 };
