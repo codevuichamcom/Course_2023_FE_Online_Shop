@@ -30,22 +30,19 @@ export const Header = () => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto me-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Home</NavLink>
+                <NavLink href="/home">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">Shop</NavLink>
+                <NavLink href="/shop-category">Shop</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">Home</NavLink>
+                <NavLink href="/login">Login</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">Blog</NavLink>
+                <NavLink href="/register">Register</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">Pages</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/">Contact</NavLink>
+                <NavLink href="/contact">Contact</NavLink>
               </NavItem>
             </Nav>
             <Nav className="d-flex align-items-center Header__actions">

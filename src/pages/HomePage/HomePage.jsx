@@ -1,10 +1,8 @@
-import { Footer, Header } from "src/components";
 import "./HomePage.css";
 import { Banner, Offer, ProductListWithIntro, Slide } from "./components";
 export const HomePage = () => {
   return (
     <>
-      <Header />
       <main className="home-page__main">
         <Banner />
         <Slide />
@@ -25,7 +23,6 @@ export const HomePage = () => {
           name="News"
         />
       </main>
-      <Footer />
     </>
   );
 };

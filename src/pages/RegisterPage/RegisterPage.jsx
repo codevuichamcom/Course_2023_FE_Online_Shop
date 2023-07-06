@@ -8,9 +8,9 @@ import {
   Label,
   Row,
 } from "reactstrap";
-import "./LoginPage.css";
+import "./RegisterPage.css";
 
-export const LoginPage = () => {
+export const RegisterPage = () => {
   return (
     <>
       <main className="login-page">
@@ -28,7 +28,7 @@ export const LoginPage = () => {
               <h3>LOG IN TO ENTER</h3>
               <Form>
                 <FormGroup>
-                  <Label htmlFor="username">Username</Label>
+                  <Label htmlFor="Username">Username</Label>
                   <Input id="username" placeholder="Username" />
                 </FormGroup>
                 <FormGroup>

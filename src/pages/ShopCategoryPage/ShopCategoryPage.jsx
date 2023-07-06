@@ -18,7 +18,6 @@ const browseCategories = [
 export const ShopCategoryPage = () => {
   return (
     <>
-      <Header />
       <main className="shop-category-page__main">
         <BannerPath title="Shop Category" path="Home - Shop Category" />
         <Container className="shop-category-page__container">
@@ -80,7 +79,6 @@ export const ShopCategoryPage = () => {
         </Container>
         <ProductList md="4" lg="6" xl="6" />
       </main>
-      <Footer />
     </>
   );
 };

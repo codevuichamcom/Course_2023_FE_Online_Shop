@@ -45,7 +45,6 @@ export const ProductDetailPage = () => {
   const [activeTab, setActiveTab] = useState(1);
   return (
     <div className="product-detail-page">
-      <Header />
       <BannerPath title="Product Detail" path="Home - Product detail" />
       <Container className="product-detail-page__product-area">
         <Row>
@@ -110,7 +109,6 @@ export const ProductDetailPage = () => {
           {renderTab(activeTab)}
         </div>
       </Container>
-      <Footer />
     </div>
   );
 };
