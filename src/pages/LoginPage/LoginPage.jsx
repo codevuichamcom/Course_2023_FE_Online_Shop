@@ -15,6 +15,7 @@ import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { setLoggedInAccount } from "src/app/AccountSlice";
 import { useNavigate } from "react-router-dom";
+import { BannerPath } from "src/components";
 
 export const LoginPage = () => {
   const navigate = useNavigate();
@@ -42,21 +43,32 @@ export const LoginPage = () => {
   return (
     <>
       <main className="login-page">
-        <Container>
-          <Row>
+        <BannerPath title="Login / Register" path="Home - Login / Register" />
+        <Container className="login-box">
+          <Row className="login-box__wrapper">
             <Col lg="6" className="login-page__left">
-              <h3>New to our website?</h3>
-              <div>
-                There are advances being made in science and technology
-                everyday, and a good example of this is the Create an Account
+              <div className="login-page__create-account">
+                <h3>New to our website?</h3>
+                <div>
+                  There are advances being made in science and technology
+                  everyday, and a good example of this is the Create an Account
+                </div>
+                <Button
+                  outline
+                  color="#fff"
+                  className="login-page__btn-create"
+                  onClick={() => {
+                    navigate("/register");
+                  }}
+                >
+                  Create an Account
+                </Button>
               </div>
-              <button>Create an Account</button>
             </Col>
             <Col lg="6" className="login-page__right">
               <h3>LOG IN TO ENTER</h3>
-              <Form onSubmit={handleLogin}>
+              <Form onSubmit={handleLogin} className="login-page__form">
                 <FormGroup>
-                  <Label htmlFor="username">Username</Label>
                   <Input
                     id="username"
                     placeholder="Username"
@@ -66,7 +78,6 @@ export const LoginPage = () => {
                   />
                 </FormGroup>
                 <FormGroup>
-                  <Label for="password">Password</Label>
                   <Input
                     type="password"
                     id="password"
@@ -76,7 +87,7 @@ export const LoginPage = () => {
                     }}
                   />
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check className="login-page__remember">
                   <Label check>
                     <Input
                       type="checkbox"
@@ -87,7 +98,12 @@ export const LoginPage = () => {
                     Keep me logged in
                   </Label>
                 </FormGroup>
-                <Button outline color="primary" onClick={handleLogin}>
+                <Button
+                  outline
+                  color="primary"
+                  className="login-page__btn-login"
+                  onClick={handleLogin}
+                >
                   Login
                 </Button>
               </Form>
